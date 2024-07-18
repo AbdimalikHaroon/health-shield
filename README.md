@@ -66,45 +66,42 @@ Clone the Health Shield repository from GitHub:
 ```sh
 git clone https://github.com/yourusername/health-shield.git
 cd health-shield
-Step 3: Setup Virtual Environment
+**## Step 3: Setup Virtual Environment**
 Create and activate a virtual environment:
 
-sh
-Copy code
+
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-Step 4: Install Dependencies
+
+**##Step 4: Install Dependencies**
 Install the required Python packages:
 
-sh
-Copy code
+
 pip install -r requirements.txt
-Step 5: Configure the Application
+**##Step 5: Configure the Application**
 Create a .env file in the root directory of the project and add the following configurations:
 env
-Copy code
 DATABASE_URI=mysql+pymysql://username:password@localhost/health_shield_db
 Replace username and password with your MariaDB credentials.
-Step 6: Initialize the Database
+**
+##Step 6: Initialize the Database**
 Run the following commands to create the necessary tables in the database:
-
-sh
-Copy code
 python manage.py db init
 python manage.py db migrate
 python manage.py db upgrade
-Step 7: Running the Application
+
+**##Step 7: Running the Application**
 Start the Python application:
 
-sh
-Copy code
 python app.py
 The application will be available at http://127.0.0.1:5000.
 
-Deliverables
+
+**##Deliverables**
 The Health Shield prototype.
 Detailed documentation to guide users and developers through the setup and usage of Health Shield.
-References
+
+**##References**
 Python Documentation
 MariaDB Documentation
 GNS3 Documentation
@@ -112,10 +109,12 @@ VirtualBox Documentation
 Kali Linux Documentation
 Arduino IDE Documentation
 Visual Studio Documentation
-About
+
+**##About**
 An anonymization tool for health records designed to promote trust and confidentiality in healthcare environments while facilitating data-driven decision-making and analysis.
 
-Languages Used
+
+**##Languages Used**
 C++ 47.2%
 Python 37.6%
 HTML 10.0%
