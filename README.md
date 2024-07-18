@@ -66,56 +66,67 @@ Clone the Health Shield repository from GitHub:
 ```sh
 git clone https://github.com/yourusername/health-shield.git
 cd health-shield
-**## Step 3: Setup Virtual Environment**
+```
+
+## Step 3: Setup Virtual Environment
+
 Create and activate a virtual environment:
-
-
+```sh
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
 
-**##Step 4: Install Dependencies**
+## Step 4: Install Dependencies
+
 Install the required Python packages:
-
-
+```sh
 pip install -r requirements.txt
-**##Step 5: Configure the Application**
-Create a .env file in the root directory of the project and add the following configurations:
-env
-DATABASE_URI=mysql+pymysql://username:password@localhost/health_shield_db
-Replace username and password with your MariaDB credentials.
-**
-##Step 6: Initialize the Database**
+```
+
+## Step 5: Configure the Application
+
+1. Create a `.env` file in the root directory of the project and add the following configurations:
+    ```env
+    DATABASE_URI=mysql+pymysql://username:password@localhost/health_shield_db
+    ```
+2. Replace `username` and `password` with your MariaDB credentials.
+
+## Step 6: Initialize the Database
+
 Run the following commands to create the necessary tables in the database:
+```sh
 python manage.py db init
 python manage.py db migrate
 python manage.py db upgrade
+```
 
-**##Step 7: Running the Application**
+## Step 7: Running the Application
+
 Start the Python application:
-
+```sh
 python app.py
-The application will be available at http://127.0.0.1:5000.
+```
+The application will be available at `http://127.0.0.1:5000`.
 
+## Deliverables
 
-**##Deliverables**
-The Health Shield prototype.
-Detailed documentation to guide users and developers through the setup and usage of Health Shield.
+- The Health Shield prototype.
+- Detailed documentation to guide users and developers through the setup and usage of Health Shield.
 
-**##References**
-Python Documentation
-MariaDB Documentation
-GNS3 Documentation
-VirtualBox Documentation
-Kali Linux Documentation
-Arduino IDE Documentation
-Visual Studio Documentation
+## References
 
-**##About**
-An anonymization tool for health records designed to promote trust and confidentiality in healthcare environments while facilitating data-driven decision-making and analysis.
+- [Python Documentation](https://docs.python.org/3/)
+- [MariaDB Documentation](https://mariadb.com/kb/en/documentation/)
+- [GNS3 Documentation](https://docs.gns3.com/)
+- [VirtualBox Documentation](https://www.virtualbox.org/manual/UserManual.html)
+- [Kali Linux Documentation](https://www.kali.org/docs/)
+- [Arduino IDE Documentation](https://www.arduino.cc/en/Guide)
+- [Visual Studio Documentation](https://docs.microsoft.com/en-us/visualstudio/)
 
+## Languages Used
 
-**##Languages Used**
-C++ 47.2%
-Python 37.6%
-HTML 10.0%
-CSS 5.2%
+- C++ 47.2%
+- Python 37.6%
+- HTML 10.0%
+- CSS 5.2%
+```
